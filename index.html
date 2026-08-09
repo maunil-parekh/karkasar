@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- SEO -->
+  <title>Karkasar — Know Where Every Rupee Goes | Pre-Register</title>
+  <meta name="description"
+    content="Karkasar predicts your cash flow, warns you before you go broke, and turns spending into real insights. Join the waitlist for early access." />
+  <meta name="keywords" content="personal finance app, expense tracker, cash flow, budget app, India" />
+  <meta property="og:title" content="Karkasar — Pre-Register for Early Access" />
+  <meta property="og:description"
+    content="Stop wondering where your money went. Join the waitlist and be the first to try Karkasar." />
+  <meta property="og:type" content="website" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <link rel="icon"
+    href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💰</text></svg>" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- Aurora animated background -->
+  <div class="aurora-bg" aria-hidden="true"></div>
+
+  <!-- Confetti canvas -->
+  <canvas id="confettiCanvas" aria-hidden="true"></canvas>
+
+  <!-- ═══════════════════════════════════════════════════════════
+     NAVBAR
+════════════════════════════════════════════════════════════ -->
+  <header id="navbar" role="banner">
+    <div class="container">
+      <nav class="nav-inner" aria-label="Main navigation">
+        <a href="#" class="nav-logo" aria-label="Karkasar home">
+          <div class="nav-logo-icon" aria-hidden="true">💰</div>
+          <span>Karkasar</span>
+        </a>
+        <ul class="nav-links" role="list">
+          <li><a href="#problem">Why Us</a></li>
+          <li><a href="#features">Features</a></li>
+          <li><a href="#faq">FAQ</a></li>
+        </ul>
+        <a href="#waitlist" class="btn-nav-cta" id="nav-cta-btn">Get Early Access</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ═══════════════════════════════════════════════════════════
+     HERO SECTION
+════════════════════════════════════════════════════════════ -->
+  <main>
+    <section id="hero" aria-labelledby="hero-headline">
+      <div class="container">
+        <div class="hero-inner">
+
+          <!-- Left: Copy -->
+          <div class="hero-content">
+            <div class="hero-badge animate-fade-up animate-delay-1" role="status">
+              <span class="badge-dot" aria-hidden="true"></span>
+              Now accepting early registrations
+            </div>
+
+            <h1 id="hero-headline" class="hero-headline animate-fade-up animate-delay-2">
+              Stop Wondering<br />
+              <span class="text-gradient">Where Your</span><br />
+              Money Went.
+            </h1>
+
+            <p class="hero-sub animate-fade-up animate-delay-3">
+              Karkasar predicts your cash flow, warns you <em>before</em> you go
+              broke, and turns your spending data into real, actionable insights — not
+              just pie charts.
+            </p>
+
+            <div class="hero-cta-group animate-fade-up animate-delay-4">
+              <a href="#waitlist" class="btn-primary" id="hero-cta-btn">
+                <span class="btn-primary-icon" aria-hidden="true">⚡</span>
+                Join the Waitlist — It's Free
+              </a>
+              <p class="trust-text">
+                <span aria-hidden="true">🔒</span>
+                No spam. Unsubscribe anytime.
+              </p>
+            </div>
+          </div>
+
+          <!-- Right: Visual -->
+          <div class="hero-visual" aria-hidden="true">
+            <div class="hero-mockup-wrapper">
+              <!-- Glowing app screen mockup (CSS-generated if image missing) -->
+              <div class="hero-mockup-screen">
+                <img src="mockup.png" alt="Karkasar app dashboard showing balance and spending insights"
+                  class="hero-mockup"
+                  onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
+                <!-- Fallback if image not found -->
+                <div class="mockup-fallback"
+                  style="display:none; width:300px; height:540px; background:linear-gradient(145deg,#11111a,#181825); border-radius:32px; border:1px solid rgba(108,99,255,0.3); flex-direction:column; align-items:center; justify-content:center; gap:16px; padding:28px;">
+                  <div style="font-size:3rem">💰</div>
+                  <div
+                    style="font-size:1.1rem;font-weight:700;background:linear-gradient(135deg,#6c63ff,#4ecdc4);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;">
+                    Karkasar</div>
+                  <div
+                    style="width:80%;height:2px;background:linear-gradient(90deg,#6c63ff,#4ecdc4);border-radius:2px;">
+                  </div>
+                  <div style="font-size:0.8rem;color:#8888aa;text-align:center;">Smart cashflow prediction<br />&
+                    spending insights</div>
+                  <div
+                    style="background:rgba(108,99,255,0.1);border:1px solid rgba(108,99,255,0.2);border-radius:12px;padding:14px;width:100%;text-align:center;">
+                    <div style="font-size:0.7rem;color:#8888aa;margin-bottom:4px;">Total Balance</div>
+                    <div style="font-size:1.6rem;font-weight:800;color:#f0f0ff;">₹48,230</div>
+                  </div>
+                  <div style="display:flex;gap:10px;width:100%;">
+                    <div
+                      style="flex:1;background:rgba(78,204,163,0.1);border:1px solid rgba(78,204,163,0.2);border-radius:10px;padding:10px;text-align:center;">
+                      <div style="font-size:0.6rem;color:#8888aa;">Income</div>
+                      <div style="font-size:0.95rem;font-weight:700;color:#4ecca3;">₹82,000</div>
+                    </div>
+                    <div
+                      style="flex:1;background:rgba(255,101,132,0.1);border:1px solid rgba(255,101,132,0.2);border-radius:10px;padding:10px;text-align:center;">
+                      <div style="font-size:0.6rem;color:#8888aa;">Spent</div>
+                      <div style="font-size:0.95rem;font-weight:700;color:#ff6584;">₹33,770</div>
+                    </div>
+                  </div>
+                  <div
+                    style="font-size:0.75rem;color:#ffd700;background:rgba(255,215,0,0.1);padding:8px 14px;border-radius:8px;width:100%;text-align:center;">
+                    ⚠️ Cash runs low in 6 days</div>
+                </div>
+              </div>
+              <div class="hero-mockup-glow"></div>
+
+              <!-- Floating stat cards -->
+              <div class="floating-card card-1" aria-hidden="true">
+                <div class="floating-card-label">Cash Flow</div>
+                <div class="floating-card-value val-green">↑ Safe this month</div>
+              </div>
+              <div class="floating-card card-2" aria-hidden="true">
+                <div class="floating-card-label">AI Nudge</div>
+                <div class="floating-card-value val-warning">Save ₹3K this week</div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════════════
+     SOCIAL PROOF BAR
+════════════════════════════════════════════════════════════ -->
+    <section id="social-proof" aria-label="Social proof statistics">
+      <div class="container">
+        <div class="proof-inner">
+          <div class="proof-item">
+            <span class="proof-icon" aria-hidden="true">📱</span>
+            <span>Android & iOS · <strong>Coming Soon</strong></span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════════════
+     PROBLEM / SOLUTION SECTION
+════════════════════════════════════════════════════════════ -->
+    <section id="problem" aria-labelledby="problem-title">
+      <div class="container">
+        <div class="reveal">
+          <p class="section-eyebrow">The real problem</p>
+          <h2 id="problem-title" class="section-title">
+            You already know<br />
+            <span class="text-gradient">this feeling.</span>
+          </h2>
+          <p class="section-sub">
+            Existing finance apps show you what already happened. That doesn't help.
+            You need to know what's <em>about to</em> happen.
+          </p>
+        </div>
+
+        <div class="problem-grid">
+
+          <div class="glass-card problem-card reveal">
+            <span class="problem-icon" aria-hidden="true">😩</span>
+            <span class="problem-pain">"I earn well but go broke by the 25th"</span>
+            <h3 class="problem-title">Predictive Brokiness</h3>
+            <p class="problem-desc">Your salary comes in, but somehow it's gone before the month ends. No warning, no
+              signal.</p>
+            <div class="arrow-right" aria-hidden="true">→ We warn you 5–7 days early</div>
+            <p class="problem-desc">Karkasar monitors your spending rate in real time and alerts you before it's too
+              late.</p>
+          </div>
+
+          <div class="glass-card problem-card reveal">
+            <span class="problem-icon" aria-hidden="true">📊</span>
+            <span class="problem-pain">"I have charts but no idea what to do"</span>
+            <h3 class="problem-title">Data Without Action</h3>
+            <p class="problem-desc">Every other tracker shows a donut chart of what happened. Cool graphic, zero
+              utility.</p>
+            <div class="arrow-right" aria-hidden="true">→ We give you the action, not just the data</div>
+            <p class="problem-desc">Smart nudges tell you exactly what to cut — ranked by impact, not by category.</p>
+          </div>
+
+          <div class="glass-card problem-card reveal">
+            <span class="problem-icon" aria-hidden="true">🔐</span>
+            <span class="problem-pain">"I don't trust cloud apps with my finances"</span>
+            <h3 class="problem-title">Privacy Anxiety</h3>
+            <p class="problem-desc">Sharing your complete financial life with a cloud server feels wrong. Because it is.
+            </p>
+            <div class="arrow-right" aria-hidden="true">→ Offline-first, cloud optional</div>
+            <p class="problem-desc">All your data lives on your device using encrypted local storage. Cloud sync is your
+              choice.</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════════════
+     FEATURES BENTO GRID
+════════════════════════════════════════════════════════════ -->
+    <section id="features" aria-labelledby="features-title">
+      <div class="container">
+        <div class="features-header reveal">
+          <p class="section-eyebrow">What's coming</p>
+          <h2 id="features-title" class="section-title">
+            Built different,<br />
+            <span class="text-gradient">by design.</span>
+          </h2>
+          <p class="section-sub">Every feature was built to fix a real problem, not to fill a feature checklist.</p>
+        </div>
+
+        <div class="bento-grid">
+
+          <div class="glass-card bento-card span-7 reveal">
+            <div class="bento-icon-wrap icon-violet" aria-hidden="true">🔮</div>
+            <h3 class="bento-title">Predictive Cash Flow</h3>
+            <p class="bento-desc">
+              Know you'll run out of money 5 days early, not 5 days late.
+              Karkasar models your spending velocity against your remaining balance
+              and sends you an alert before the problem happens.
+            </p>
+            <span class="bento-tag tag-violet">Coming at launch</span>
+            <div class="mini-bars" aria-hidden="true">
+              <div class="mini-bar" style="height:35%"></div>
+              <div class="mini-bar" style="height:60%"></div>
+              <div class="mini-bar" style="height:45%"></div>
+              <div class="mini-bar" style="height:80%"></div>
+              <div class="mini-bar" style="height:55%"></div>
+              <div class="mini-bar" style="height:70%"></div>
+              <div class="mini-bar" style="height:90%"></div>
+            </div>
+          </div>
+
+          <div class="glass-card bento-card span-5 reveal">
+            <div class="bento-icon-wrap icon-teal" aria-hidden="true">🧠</div>
+            <h3 class="bento-title">Smart Nudges</h3>
+            <p class="bento-desc">
+              Personalised suggestions ranked by impact — not generic advice. "Cut your daily coffee spend" is gone.
+              We'll tell you the one thing that moves the needle.
+            </p>
+            <span class="bento-tag tag-teal">AI-powered</span>
+          </div>
+
+          <div class="glass-card bento-card span-4 reveal">
+            <div class="bento-icon-wrap icon-gold" aria-hidden="true">📴</div>
+            <h3 class="bento-title">Offline First</h3>
+            <p class="bento-desc">
+              Works on the train, in the basement, anywhere. Syncs to cloud when you have signal.
+            </p>
+            <span class="bento-tag tag-gold">Hive local storage</span>
+          </div>
+
+          <div class="glass-card bento-card span-8 reveal">
+            <div class="bento-icon-wrap icon-pink" aria-hidden="true">📈</div>
+            <h3 class="bento-title">Month-Over-Month Intelligence</h3>
+            <p class="bento-desc">
+              Stop comparing yourself to last month's pie chart. See real behavioral trends —
+              which categories are creeping up, which weeks you overspend, and which habits
+              are costing you the most over time. Built for long-term financial awareness, not one-time curiosity.
+            </p>
+            <span class="bento-tag tag-pink">Analytics</span>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════════════
+     PRE-REGISTRATION FORM
+════════════════════════════════════════════════════════════ -->
+    <section id="waitlist" aria-labelledby="waitlist-title">
+      <div class="container">
+        <div class="waitlist-inner">
+
+          <div class="waitlist-badge" aria-label="Limited spots available">
+            <span aria-hidden="true">🔥</span> Limited founding spots
+          </div>
+
+          <h2 id="waitlist-title" class="waitlist-title reveal">
+            Be First.<br />
+            <span class="text-gradient-warm">Get Lifetime Benefits.</span>
+          </h2>
+
+          <p class="waitlist-sub reveal">
+            Early registrations get <strong>free premium access</strong> at launch,
+            a founding member badge, and direct influence over which features ship first.
+          </p>
+
+          <div class="perks-row reveal" aria-label="Perks for early members">
+            <div class="perk-chip">
+              <span aria-hidden="true">🎁</span>
+              <span>Free premium at launch</span>
+            </div>
+            <div class="perk-chip">
+              <span aria-hidden="true">🏅</span>
+              <span>Founding member badge</span>
+            </div>
+            <div class="perk-chip">
+              <span aria-hidden="true">🗳️</span>
+              <span>Vote on features</span>
+            </div>
+            <div class="perk-chip">
+              <span aria-hidden="true">⚡</span>
+              <span>Beta access first</span>
+            </div>
+          </div>
+
+          <!-- Form card -->
+          <div class="glass-card form-card reveal" id="formCard">
+            <form id="preregForm" novalidate aria-label="Pre-registration form">
+              <div class="input-group">
+                <span class="input-icon" aria-hidden="true">👤</span>
+                <input type="text" id="inputName" class="form-input" placeholder="Your first name"
+                  autocomplete="given-name" required aria-label="First name" aria-required="true" />
+              </div>
+              <div class="input-group">
+                <span class="input-icon" aria-hidden="true">📧</span>
+                <input type="email" id="inputEmail" class="form-input" placeholder="your@email.com" autocomplete="email"
+                  required aria-label="Email address" aria-required="true" />
+              </div>
+              <button type="submit" class="btn-submit" id="submitBtn" aria-label="Reserve my spot on the waitlist">
+                <span class="btn-text">⚡ Reserve My Spot</span>
+                <div class="btn-spinner" aria-hidden="true"></div>
+              </button>
+              <p class="form-note">
+                <span aria-hidden="true">🔒</span>
+                Zero spam. We'll only email you when we launch.
+              </p>
+              <p class="form-note form-note-device" id="deviceNote">
+                <span aria-hidden="true">💻</span>
+                One spot per device/browser — re-opening this page will show your confirmed registration.
+              </p>
+            </form>
+
+            <!-- Success State -->
+            <div id="successMessage" role="alert" aria-live="polite">
+              <span class="success-icon" aria-hidden="true">🎉</span>
+              <h3 class="success-title">You're on the list!</h3>
+              <p class="success-sub">
+                We'll notify you the moment beta opens — you'll be among the very first.
+                Tell a friend to help us build faster!
+              </p>
+              <div style="margin-top:20px; display:flex; flex-direction:column; align-items:center; gap:10px;">
+                <button class="btn-primary" id="insta-story-btn"
+                  style="display:inline-flex;margin:0 auto;font-size:0.9rem;padding:12px 24px;background:linear-gradient(135deg,#833ab4,#fd1d1d,#fcb045);border:none;cursor:pointer;"
+                  aria-label="Download story card to share on Instagram">
+                  <span aria-hidden="true" style="margin-right:6px;">📸</span> Share to Instagram Story
+                </button>
+                <p id="insta-hint"
+                  style="font-size:0.75rem;color:#8888aa;display:none;text-align:center;max-width:240px;">
+                  Story card downloaded! Open Instagram → <strong>Add to Story</strong> → tap the sticker/photo icon to
+                  add it.
+                </p>
+              </div>
+              <!-- Hidden canvas used to generate the Instagram story card -->
+              <canvas id="storyCanvas" width="1080" height="1920" style="display:none;" aria-hidden="true"></canvas>
+            </div>
+          </div>
+
+          <!-- Live counter -->
+          <div class="waitlist-counter reveal" aria-live="polite">
+            <div class="counter-avatars" aria-hidden="true">
+              <div class="counter-avatar">A</div>
+              <div class="counter-avatar">R</div>
+              <div class="counter-avatar">P</div>
+              <div class="counter-avatar">K</div>
+            </div>
+            <span>
+              🔥 <strong id="liveCount">18</strong> people already registered
+            </span>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════════════
+     FAQ SECTION
+════════════════════════════════════════════════════════════ -->
+    <section id="faq" aria-labelledby="faq-title">
+      <div class="container">
+        <div class="faq-inner">
+          <div class="reveal" style="text-align:center;">
+            <p class="section-eyebrow">Got questions?</p>
+            <h2 id="faq-title" class="section-title">Frequently Asked</h2>
+          </div>
+
+          <div class="faq-list" role="list">
+
+            <details class="faq-item glass-card reveal" role="listitem">
+              <summary>
+                When is the app launching?
+                <span class="faq-chevron" aria-hidden="true">▼</span>
+              </summary>
+              <p class="faq-body">
+                We're targeting <strong>Before End of 2026</strong> for a public beta on Android and iOS.
+                A limited number of waitlist members will get early access before the public launch.
+              </p>
+            </details>
+
+            <details class="faq-item glass-card reveal" role="listitem">
+              <summary>
+                Is Karkasar free?
+                <span class="faq-chevron" aria-hidden="true">▼</span>
+              </summary>
+              <p class="faq-body">
+                There will be a generous free tier. <strong>A limited number of early registrants will get free premium
+                  access at
+                  launch</strong>, no strings attached. We mean it.
+              </p>
+            </details>
+
+
+            <details class="faq-item glass-card reveal" role="listitem">
+              <summary>
+                Which platforms will be supported?
+                <span class="faq-chevron" aria-hidden="true">▼</span>
+              </summary>
+              <p class="faq-body">
+                <strong>Android and iOS</strong> at launch. Web and desktop versions are on the roadmap.
+              </p>
+            </details>
+
+            <details class="faq-item glass-card reveal" role="listitem">
+              <summary>
+                What does "pre-register" actually get me?
+                <span class="faq-chevron" aria-hidden="true">▼</span>
+              </summary>
+              <p class="faq-body">
+                You get: <strong>1) First notification</strong> when beta opens. <strong>2) Free premium plan</strong>
+                at launch (permanently). <strong>3) Founding member badge</strong> in the app. <strong>4) Direct
+                  input</strong> on feature prioritisation via surveys.
+              </p>
+            </details>
+
+            <details class="faq-item glass-card reveal" role="listitem">
+              <summary>
+                Will you spam me?
+                <span class="faq-chevron" aria-hidden="true">▼</span>
+              </summary>
+              <p class="faq-body">
+                Absolutely not. We'll only email you when: (a) we open the beta, and (b) we launch publicly. That's it.
+                Unsubscribe link in every email. No newsletters, no marketing fluff.
+              </p>
+            </details>
+
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ═══════════════════════════════════════════════════════════
+     FOOTER
+════════════════════════════════════════════════════════════ -->
+  <footer id="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-inner">
+        <div>
+          <div class="footer-brand">
+            <div class="nav-logo-icon" style="width:32px;height:32px;font-size:16px;" aria-hidden="true">💰</div>
+            <span>Karkasar</span>
+          </div>
+          <p class="footer-copy">Made with ❤️ in India.</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="app.js" defer></script>
+
+</body>
+
+</html>

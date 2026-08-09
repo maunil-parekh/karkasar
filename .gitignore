@@ -1,0 +1,11 @@
+# Environment variables
+.env
+.env.local
+
+# Vercel
+.vercel
+
+# Node
+node_modules/
+dist/
+.DS_Store
